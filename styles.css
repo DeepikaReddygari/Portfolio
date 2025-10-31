@@ -1122,14 +1122,15 @@ section {
 }
 
 .project-content h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .project-content p {
-    color: #6b7280;
+    color: #e5e7eb;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
