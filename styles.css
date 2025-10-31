@@ -2417,3 +2417,33 @@ section {
 
 
 
+
+/* Animated Kitty Photo */
+.profile-image {
+    animation: floatKitty 3s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+@keyframes floatKitty {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.profile-image:hover {
+    animation: none;
+    transform: scale(1.05) rotate(5deg);
+}
+
+.profile-image img {
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-image:hover img {
+    box-shadow: 0 0 50px rgba(37, 99, 235, 0.6);
+}
