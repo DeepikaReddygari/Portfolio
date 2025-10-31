@@ -2426,8 +2426,12 @@ section {
 
 @keyframes floatKitty {
     0%, 100% {
-        transform: translateY(0px);
+        transform: translateY(0px) scale(1);
     }
+    50% {
+        transform: translateY(-25px) scale(1.05);
+    }
+}
     50% {
         transform: translateY(-15px);
     }
