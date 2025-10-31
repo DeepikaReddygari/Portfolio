@@ -2433,6 +2433,34 @@ section {
     }
 }
 
+@keyframes rotateRing {
+    0% {
+        box-shadow: 
+            0 0 0 5px rgba(37, 99, 235, 0.8),
+            0 0 20px rgba(37, 99, 235, 0.6);
+    }
+    25% {
+        box-shadow: 
+            0 -2px 0 3px rgba(37, 99, 235, 0.8),
+            0 0 20px rgba(37, 99, 235, 0.6);
+    }
+    50% {
+        box-shadow: 
+            0 0 0 2px rgba(37, 99, 235, 0.8),
+            0 0 20px rgba(37, 99, 235, 0.6);
+    }
+    75% {
+        box-shadow: 
+            0 2px 0 3px rgba(37, 99, 235, 0.8),
+            0 0 20px rgba(37, 99, 235, 0.6);
+    }
+    100% {
+        box-shadow: 
+            0 0 0 5px rgba(37, 99, 235, 0.8),
+            0 0 20px rgba(37, 99, 235, 0.6);
+    }
+}
+
 .profile-image:hover {
     animation: none;
     transform: scale(1.05) rotate(5deg);
@@ -2440,12 +2468,11 @@ section {
 
 .profile-image img {
     border-radius: 50%;
-    border: 5px solid rgba(37, 99, 235, 0.6);
-    box-shadow: 0 0 40px rgba(37, 99, 235, 0.5);
+    animation: rotateRing 3s ease-in-out infinite;
     transition: all 0.3s ease;
 }
 
 .profile-image:hover img {
-    border-color: rgba(37, 99, 235, 0.9);
-    box-shadow: 0 0 60px rgba(37, 99, 235, 0.8);
+    animation: none;
+    box-shadow: 0 0 0 5px rgba(37, 99, 235, 1), 0 0 40px rgba(37, 99, 235, 0.8);
 }
